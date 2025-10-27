@@ -20,7 +20,7 @@ export default function NotFound() {
         </CardHeader>
         <CardContent>
           <Button onClick={() => setLocation("/")} className="w-full" data-testid="button-home">
-            <Home className="w-4 h-4 mr-2" />
+            <Home className="w-4 h-4 mr-2" aria-hidden="true" />
             Go Home
           </Button>
         </CardContent>

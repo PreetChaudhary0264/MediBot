@@ -84,7 +84,7 @@ export default function Home() {
         <div className="container mx-auto px-4 h-16 flex items-center justify-between">
           <div className="flex items-center gap-2">
             <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary">
-              <FileText className="w-5 h-5 text-primary-foreground" />
+              <FileText className="w-5 h-5 text-primary-foreground" aria-hidden="true" />
             </div>
             <h1 className="text-xl font-semibold">MediClarify</h1>
           </div>
@@ -126,9 +126,9 @@ export default function Home() {
                   <input {...getInputProps()} data-testid="input-file" />
                   <div className="flex items-center justify-center w-16 h-16 rounded-full bg-primary/10">
                     {uploading ? (
-                      <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" />
+                      <div className="w-8 h-8 border-4 border-primary border-t-transparent rounded-full animate-spin" aria-label="Uploading file" />
                     ) : (
-                      <Upload className="w-8 h-8 text-primary" />
+                      <Upload className="w-8 h-8 text-primary" aria-hidden="true" />
                     )}
                   </div>
                   <div className="text-center space-y-2">
@@ -162,7 +162,7 @@ export default function Home() {
               <Card>
                 <CardHeader className="space-y-3">
                   <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
-                    <Upload className="w-6 h-6 text-primary" />
+                    <Upload className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
                   <CardTitle className="text-xl">Upload Report</CardTitle>
                 </CardHeader>
@@ -176,7 +176,7 @@ export default function Home() {
               <Card>
                 <CardHeader className="space-y-3">
                   <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
-                    <Sparkles className="w-6 h-6 text-primary" />
+                    <Sparkles className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
                   <CardTitle className="text-xl">Get Explanation</CardTitle>
                 </CardHeader>
@@ -190,7 +190,7 @@ export default function Home() {
               <Card>
                 <CardHeader className="space-y-3">
                   <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10">
-                    <MessageSquare className="w-6 h-6 text-primary" />
+                    <MessageSquare className="w-6 h-6 text-primary" aria-hidden="true" />
                   </div>
                   <CardTitle className="text-xl">Ask Questions</CardTitle>
                 </CardHeader>
@@ -205,7 +205,7 @@ export default function Home() {
             <Card className="max-w-4xl mx-auto border-l-4 border-l-primary">
               <CardHeader>
                 <div className="flex items-start gap-3">
-                  <Shield className="w-5 h-5 text-primary mt-1 flex-shrink-0" />
+                  <Shield className="w-5 h-5 text-primary mt-1 flex-shrink-0" aria-hidden="true" />
                   <div className="space-y-1">
                     <CardTitle className="text-lg">Important Disclaimer</CardTitle>
                     <CardDescription className="text-sm leading-relaxed">
@@ -232,7 +232,7 @@ export default function Home() {
                 size="lg"
                 data-testid="button-new-analysis"
               >
-                <Upload className="w-4 h-4 mr-2" />
+                <Upload className="w-4 h-4 mr-2" aria-hidden="true" />
                 New Analysis
               </Button>
             </div>
@@ -254,7 +254,7 @@ export default function Home() {
                   <CardHeader className="space-y-3">
                     <div className="flex items-start justify-between gap-2">
                       <div className="flex items-center justify-center w-12 h-12 rounded-lg bg-primary/10 flex-shrink-0">
-                        <FileText className="w-6 h-6 text-primary" />
+                        <FileText className="w-6 h-6 text-primary" aria-hidden="true" />
                       </div>
                       {report.explanation && (
                         <div className="px-2 py-1 rounded-md bg-green-500/10 text-green-700 dark:text-green-400 text-xs font-medium">
@@ -267,7 +267,7 @@ export default function Home() {
                         {report.filename}
                       </CardTitle>
                       <div className="flex items-center gap-2 text-xs text-muted-foreground">
-                        <Clock className="w-3 h-3" />
+                        <Clock className="w-3 h-3" aria-hidden="true" />
                         <span>{new Date(report.uploadedAt).toLocaleDateString()}</span>
                       </div>
                     </div>

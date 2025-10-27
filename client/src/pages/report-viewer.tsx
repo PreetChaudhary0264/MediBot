@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Textarea } from "@/components/ui/textarea";
 import { ScrollArea } from "@/components/ui/scroll-area";
-import { ArrowLeft, FileText, Sparkles, Send, Loader2, AlertCircle } from "lucide-react";
+import { ArrowLeft, FileText, Sparkles, Send, Loader2, AlertCircle, Home } from "lucide-react";
 import { apiRequest, queryClient } from "@/lib/queryClient";
 import type { Report, Message } from "@shared/schema";
 import ReactMarkdown from "react-markdown";
@@ -66,7 +66,7 @@ export default function ReportViewer() {
           <CardHeader>
             <div className="flex items-center gap-3">
               <div className="flex items-center justify-center w-12 h-12 rounded-full bg-destructive/10">
-                <AlertCircle className="w-6 h-6 text-destructive" />
+                <AlertCircle className="w-6 h-6 text-destructive" aria-hidden="true" />
               </div>
               <div>
                 <CardTitle>Report Not Found</CardTitle>
@@ -76,7 +76,7 @@ export default function ReportViewer() {
           </CardHeader>
           <CardContent>
             <Button onClick={() => setLocation("/")} className="w-full">
-              <ArrowLeft className="w-4 h-4 mr-2" />
+              <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
               Back to Home
             </Button>
           </CardContent>
@@ -96,12 +96,13 @@ export default function ReportViewer() {
             size="icon"
             onClick={() => setLocation("/")}
             data-testid="button-back"
+            aria-label="Back to home"
           >
-            <ArrowLeft className="w-5 h-5" />
+            <ArrowLeft className="w-5 h-5" aria-hidden="true" />
           </Button>
           <div className="flex items-center gap-3 flex-1 min-w-0">
             <div className="flex items-center justify-center w-9 h-9 rounded-lg bg-primary/10 flex-shrink-0">
-              <FileText className="w-5 h-5 text-primary" />
+              <FileText className="w-5 h-5 text-primary" aria-hidden="true" />
             </div>
             <div className="min-w-0 flex-1">
               <h1 className="text-lg font-semibold truncate">{report.filename}</h1>
@@ -119,11 +120,11 @@ export default function ReportViewer() {
             <Tabs value={activeTab} onValueChange={setActiveTab}>
               <TabsList className="w-full grid grid-cols-2 mb-6">
                 <TabsTrigger value="original" data-testid="tab-original">
-                  <FileText className="w-4 h-4 mr-2" />
+                  <FileText className="w-4 h-4 mr-2" aria-hidden="true" />
                   Original Text
                 </TabsTrigger>
                 <TabsTrigger value="explanation" data-testid="tab-explanation">
-                  <Sparkles className="w-4 h-4 mr-2" />
+                  <Sparkles className="w-4 h-4 mr-2" aria-hidden="true" />
                   AI Explanation
                 </TabsTrigger>
               </TabsList>
@@ -152,7 +153,7 @@ export default function ReportViewer() {
                     <CardContent className="pt-12 pb-12">
                       <div className="text-center space-y-4">
                         <div className="flex items-center justify-center w-16 h-16 mx-auto rounded-full bg-destructive/10">
-                          <AlertCircle className="w-8 h-8 text-destructive" />
+                          <AlertCircle className="w-8 h-8 text-destructive" aria-hidden="true" />
                         </div>
                         <div className="space-y-2">
                           <p className="text-lg font-medium">Analysis Failed</p>
@@ -165,7 +166,7 @@ export default function ReportViewer() {
                           variant="outline"
                           data-testid="button-back-home"
                         >
-                          <ArrowLeft className="w-4 h-4 mr-2" />
+                          <ArrowLeft className="w-4 h-4 mr-2" aria-hidden="true" />
                           Back to Home
                         </Button>
                       </div>
@@ -209,7 +210,7 @@ export default function ReportViewer() {
                 <Card className="border-l-4 border-l-primary">
                   <CardContent className="pt-6">
                     <div className="flex items-start gap-3 text-sm">
-                      <AlertCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" />
+                      <AlertCircle className="w-5 h-5 text-primary mt-0.5 flex-shrink-0" aria-hidden="true" />
                       <p className="text-muted-foreground leading-relaxed">
                         This is an AI-generated explanation for educational purposes only. 
                         Always consult with a qualified healthcare professional for medical advice.
@@ -235,7 +236,7 @@ export default function ReportViewer() {
               {messages.length === 0 && !isAnalyzing && (
                 <div className="text-center py-8 space-y-3">
                   <div className="flex items-center justify-center w-12 h-12 mx-auto rounded-full bg-muted">
-                    <Sparkles className="w-6 h-6 text-muted-foreground" />
+                    <Sparkles className="w-6 h-6 text-muted-foreground" aria-hidden="true" />
                   </div>
                   <div className="space-y-1">
                     <p className="text-sm font-medium">Start a Conversation</p>
@@ -310,11 +311,12 @@ export default function ReportViewer() {
                 size="icon"
                 className="flex-shrink-0"
                 data-testid="button-send-message"
+                aria-label="Send message"
               >
                 {chatMutation.isPending ? (
-                  <Loader2 className="w-4 h-4 animate-spin" />
+                  <Loader2 className="w-4 h-4 animate-spin" aria-hidden="true" />
                 ) : (
-                  <Send className="w-4 h-4" />
+                  <Send className="w-4 h-4" aria-hidden="true" />
                 )}
               </Button>
             </div>
