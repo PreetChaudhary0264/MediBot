@@ -41,7 +41,7 @@ export default function Contact() {
       {/* FOOTER */}
       <footer className="contact-footer">
         <hr />
-        <p>Made by <span className="love">Preet ❤️</span> — turning code into care.</p>
+        <p>Made by <span className="love">Preet</span> — turning code into care.</p>
       </footer>
     </div>
   );

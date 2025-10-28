@@ -13,7 +13,7 @@
 
 .contact-header h1 {
   font-size: 3rem;
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 20px;
 }
 
@@ -41,7 +41,7 @@
 
 .contact-info h2 {
   font-size: 2rem;
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 15px;
 }
 
@@ -58,7 +58,7 @@
 }
 
 .contact-details a {
-  color: #1976d2;
+  color: #014d1e;
   text-decoration: none;
 }
 
@@ -78,7 +78,7 @@
 
 .contact-form h3 {
   font-size: 1.8rem;
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 25px;
 }
 
@@ -96,12 +96,12 @@
 
 .contact-form input:focus,
 .contact-form textarea:focus {
-  border-color: #1976d2;
+  border-color: #014d1e;
   box-shadow: 0 0 6px rgba(25, 118, 210, 0.2);
 }
 
 .contact-form button {
-  background-color: #1976d2;
+  background-color: #014d1e;
   color: white;
   padding: 14px 28px;
   border: none;
@@ -112,12 +112,12 @@
 }
 
 .contact-form button:hover {
-  background-color: #1259a7;
+  background-color: #014d1e;
 }
 
 /* FOOTER */
 .contact-footer {
-  background-color: #1976d2;
+  background-color: gray;
   color: white;
   text-align: center;
   padding: 40px 10%;

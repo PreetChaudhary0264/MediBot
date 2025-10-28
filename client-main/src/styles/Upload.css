@@ -72,7 +72,7 @@ html, body {
 
 /* Button & Error */
 .upload-form button {
-  background-color: #1976d2;
+  background-color: #145ca3;
   color: white;
   padding: 12px;
   border: none;
@@ -84,7 +84,7 @@ html, body {
 }
 
 .upload-form button:hover {
-  background-color: #1259a7;
+  background-color: #145ca3;
 }
 
 .error {
@@ -100,7 +100,7 @@ html, body {
 }
 
 .info-section h3 {
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 40px;
   font-size: 24px;
 }
@@ -129,7 +129,7 @@ html, body {
 }
 
 .info-card h4 {
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 10px;
 }
 
@@ -141,5 +141,5 @@ html, body {
   color: #333;
   font-weight: 500;
   font-size: 15px;
-  border-top: 2px solid #1976d2;
+  border-top: 2px solid #014d1e;
 }

@@ -1,4 +1,8 @@
 {
+  "scripts": {
+    "build": "cd client && npm install && npm run build",
+     "start": "cd server && node index.js"
+  },
   "dependencies": {
     "ogl": "^1.0.11"
   }

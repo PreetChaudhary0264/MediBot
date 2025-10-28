@@ -22,7 +22,7 @@
 .hero-content h1 {
   font-size: 3rem;
   margin-bottom: 25px;
-  color: #1976d2;
+  color: #014d1e;
   line-height: 1.3;
 }
 
@@ -34,7 +34,7 @@
 }
 
 .cta-btn {
-  background-color: #1976d2;
+  background-color: #014d1e;
   color: white;
   padding: 15px 32px;
   border-radius: 10px;
@@ -45,7 +45,7 @@
 }
 
 .cta-btn:hover {
-  background-color: #1259a7;
+  background-color: #014d1e;
   transform: translateY(-2px);
 }
 
@@ -64,7 +64,7 @@
 .features-section h2 {
   margin-bottom: 70px;
   font-size: 2.6rem;
-  color: #1976d2;
+  color: #014d1e;
 }
 
 .features-grid {
@@ -75,7 +75,7 @@
 }
 
 .feature-card {
-  background: #f1f5ff;
+  background: #e7efeb;
   border-radius: 20px;
   padding: 60px 45px;
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
@@ -93,7 +93,7 @@
 .feature-card h3 {
   font-size: 1.8rem;
   margin-bottom: 20px;
-  color: #1976d2;
+  color: #014d1e;
 }
 
 
@@ -107,7 +107,7 @@
 .how-section h2 {
   margin-bottom: 60px;
   font-size: 2.4rem;
-  color: #1976d2;
+  color: #014d1e;
 }
 
 .steps {
@@ -128,7 +128,7 @@
 }
 
 .step-number {
-  background-color: #1976d2;
+  background-color: #014d1e;
   color: white;
   border-radius: 50%;
   padding: 12px 18px;
@@ -148,7 +148,7 @@
 .testimonials-section h2 {
   margin-bottom: 60px;
   font-size: 2.4rem;
-  color: #1976d2;
+  color: #014d1e;
 }
 
 .testimonials {
@@ -175,13 +175,13 @@
 
 .testimonial-card h4 {
   margin-top: 20px;
-  color: #1976d2;
+  color: #014d1e;
   font-weight: 600;
 }
 
 /* FOOTER */
 .footer {
-  background-color: #1976d2;
+  background-color: gray;
   color: white;
   text-align: center;
   padding: 60px 10%;

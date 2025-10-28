@@ -87,14 +87,14 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5️⃣ Footer Section */}
+      {/* 5️ Footer Section */}
       <footer className="footer">
         <p>
           ⚠️ Disclaimer: MediBot explanations are AI-generated. Always consult
           your doctor for medical advice.
         </p>
         <hr />
-        <p>Made by <span className="love">Preet ❤️</span> — turning code into care.</p>
+        <p>Made by <span className="love">Preet</span> — turning code into care.</p>
       </footer>
     </div>
   );

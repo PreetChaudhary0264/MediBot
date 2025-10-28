@@ -20,7 +20,7 @@
 }
 
 .report-summary h2 {
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 15px;
 }
 
@@ -49,7 +49,7 @@
 }
 
 .chat-area h3 {
-  color: #1976d2;
+  color: #014d1e;
   margin-bottom: 15px;
 }
 
@@ -97,7 +97,7 @@
 }
 
 .chat-input button {
-  background-color: #1976d2;
+  background-color: #014d1e;
   color: white;
   border: none;
   border-radius: 8px;
@@ -107,7 +107,7 @@
 }
 
 .chat-input button:hover {
-  background-color: #145ca3;
+  background-color: #014d1e;
 }
 
 /* Responsive layout */
