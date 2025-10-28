@@ -1,0 +1,19 @@
+{
+  "reports": [
+    {
+      "filename": "dummy_medical_report.pdf",
+      "originalText": "Comprehensive Medical Report  Patient Name: John Doe Age: 45 Gender: Male Date of Report: 2025-10-27  Blood Test Results:  Hemoglobin: 13.5 g/dL (Normal: 13-17) WBC Count: 8,500 /μL (Normal: 4,000-11,000) Platelet Count: 250,000 /μL (Normal: 150,000-400,000)  Lipid Profile:  Total Cholesterol: 210 mg/dL (High) HDL: 45 mg/dL (Normal) LDL: 140 mg/dL (High) Triglycerides: 180 mg/dL (Borderline High)  Doctor’s Remarks:  The patient’s lipid profile shows elevated cholesterol and LDL levels, indicating a risk for c  End of Report",
+      "explanation": null,
+      "id": "fc011b90-7639-458a-b749-12baa921e2a3",
+      "uploadedAt": "2025-10-27T15:09:46.666Z"
+    },
+    {
+      "filename": "dummy_medical_report.pdf",
+      "originalText": "Comprehensive Medical Report  Patient Name: John Doe Age: 45 Gender: Male Date of Report: 2025-10-27  Blood Test Results:  Hemoglobin: 13.5 g/dL (Normal: 13-17) WBC Count: 8,500 /μL (Normal: 4,000-11,000) Platelet Count: 250,000 /μL (Normal: 150,000-400,000)  Lipid Profile:  Total Cholesterol: 210 mg/dL (High) HDL: 45 mg/dL (Normal) LDL: 140 mg/dL (High) Triglycerides: 180 mg/dL (Borderline High)  Doctor’s Remarks:  The patient’s lipid profile shows elevated cholesterol and LDL levels, indicating a risk for c  End of Report",
+      "explanation": null,
+      "id": "67ddc9b2-faba-4835-8f27-a3c2ab881043",
+      "uploadedAt": "2025-10-27T15:11:02.436Z"
+    }
+  ],
+  "messages": []
+}

@@ -1,0 +1,145 @@
+/* Base reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  width: 100%;
+  overflow-x: hidden;
+  background: #f7f9fb;
+  font-family: "Inter", sans-serif;
+}
+
+/* Upload Section */
+.upload-section {
+  width: 100%;
+  min-height: calc(100vh - 70px);
+  display: flex;
+  background-image: url('.././assets/medical-background.jpg');
+  justify-content: center;
+  align-items: center;
+  /* background: #f7f9fb; */
+  /* padding-bottom: 60px; */
+}
+
+.upload-box {
+  background: #fff;
+  padding: 40px 35px;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  width: 100%;
+  max-width: 550px;
+  text-align: center;
+}
+
+.upload-box h2 {
+  color: #222;
+  margin-bottom: 25px;
+}
+
+.upload-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+/* Drag & Drop Box */
+.drop-zone {
+  border: 2px dashed #1976d2;
+  border-radius: 10px;
+  padding: 40px 20px;
+  background: #f8fbff;
+  color: #555;
+  font-size: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.drop-zone.dragging {
+  background-color: #e3f2fd;
+  border-color: #145ca3;
+}
+
+.drop-zone input[type="file"] {
+  opacity: 0;
+  position: absolute;
+  inset: 0;
+  cursor: pointer;
+}
+
+/* Button & Error */
+.upload-form button {
+  background-color: #1976d2;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.25s ease;
+}
+
+.upload-form button:hover {
+  background-color: #1259a7;
+}
+
+.error {
+  color: red;
+  font-size: 14px;
+}
+
+/* Info Section */
+.info-section {
+  text-align: center;
+  padding: 80px 20px;
+  background: #fff;
+}
+
+.info-section h3 {
+  color: #1976d2;
+  margin-bottom: 40px;
+  font-size: 24px;
+}
+
+.info-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 25px;
+}
+
+.info-card {
+  background: #f7f9fb;
+  border-radius: 12px;
+  color: black;
+  padding: 25px;
+  width: 280px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+  text-align: center;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.info-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+}
+
+.info-card h4 {
+  color: #1976d2;
+  margin-bottom: 10px;
+}
+
+/* Disclaimer Section */
+.disclaimer-section {
+  background: #e3f2fd;
+  text-align: center;
+  padding: 30px 15px;
+  color: #333;
+  font-weight: 500;
+  font-size: 15px;
+  border-top: 2px solid #1976d2;
+}
