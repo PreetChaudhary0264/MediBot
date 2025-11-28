@@ -3,7 +3,7 @@ import { createWorker } from "tesseract.js";
 import * as pdfjsLib from "pdfjs-dist/legacy/build/pdf.mjs"; // ✅ works natively with ESM
 
 /**
- * Extract text from a PDF using pdfjs-dist
+ * Extract text from a PDF using pdfjs-dist.....
  */
 export async function extractTextFromPDF(filePath) {
   try {
