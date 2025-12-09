@@ -6,7 +6,7 @@ dotenv.config();
 const genAI = new GoogleGenerativeAI(process.env.GEMINI_API_KEY);
 const model = genAI.getGenerativeModel({ model: "gemini-2.5-flash-lite" });
 
-// ---------- PROMPT TEMPLATES ----------
+// ---------- PROMPT TEMPLATES -------------
 const ANALYSIS_PROMPT = `
 You are a medical expert assistant helping patients understand their medical reports. 
 Your task is to:
